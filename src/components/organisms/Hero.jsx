@@ -4,14 +4,13 @@ import SectionTitle from '../molecules/SectionTitle'
 
 function Hero() {
   return (
-    /** edit the width again */
-    <section className={`
+    <section className='
       w-full 
       bg-[#000000cc]
       bg-[url("/background/65edb9e6d25fa2121b31a4ad14c9ebd02127f629.jpg")]
       bg-no-repeat bg-center bg-cover bg-blend-darken
       flex justify-center rounded-lg py-10 md:py-14
-    `}>
+    '>
 
       <div className='max-w-5xl flex flex-col justify-between items-center gap-6'>
         
@@ -34,6 +33,3 @@ function Hero() {
 }
 
 export default Hero
-
-
-// e0f71e25cc34e79e1f52284620dbea34fb453966.jpg
