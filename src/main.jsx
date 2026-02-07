@@ -5,6 +5,7 @@ import App from './App.jsx';
 import LogIn from './pages/LogIn.jsx';
 import SignIn from './pages/SignIn.jsx';
 import HomePage from './pages/HomePage.jsx';
+import Kategori from './pages/Kategori.jsx';
 
 import { createBrowserRouter } from "react-router";
 import { RouterProvider } from "react-router/dom";
@@ -25,7 +26,8 @@ const router = createBrowserRouter([
       {
         element: <MainLayout />,
         children: [
-          { path: "/homepage", Component: HomePage }
+          { path: "/homepage", Component: HomePage },
+          { path: "/kategori", Component: Kategori },
         ]
       }
     ]

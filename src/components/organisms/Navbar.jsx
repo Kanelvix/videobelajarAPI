@@ -1,21 +1,17 @@
+import { NavLink } from 'react-router';
 import videoBelajar from '../../assets/logo-videobelajar.svg';
-import avatar from '../../assets/Avatar.png';
-import menuIcon from '../../assets/menu.svg';
+import ProfileBox from '../molecules/ProfileBox';
 
 function Navbar(props) {
   return (
     <>
       <div className='flex h-20 items-center justify-between w-full bg-white border-b-[1px] border-b-[#F1F1F1] fixed top-0 right-0 left-0 px-6 shadow-lg shadow-[#22232526] md:shadow-none z-50'>
-        <div className='flex items-center cursor-pointer'>
+        <NavLink to={'/homepage'} className='flex items-center cursor-pointer hover:opacity-80 duration-300'>
           <img src={videoBelajar} alt="Logo" className=' h-7 md:h-8' />
-        </div>
+        </NavLink>
         
         <div className={`flex ${props.page !== "logInSignIn" && "flex"}`}>
-          <img src={menuIcon} alt="" className='md:hidden cursor-pointer' />
-          <div className={`hidden md:flex items-center gap-5`}>
-            <p className='cursor-pointer duration-100 hover:text-black'>Kategori</p>
-            <img src={avatar} alt="profile" className='size-11 cursor-pointer' />
-          </div>
+          <ProfileBox />
         </div>
       </div>
     </>

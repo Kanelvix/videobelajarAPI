@@ -28,11 +28,11 @@ function CategoryTabs() {
     <div className='flex gap-9 h-16 w-full overflow-x-auto no-scrollbar'>
       {tabs.map((tab) => (
         <p className={`${tab.selected === true ? (
-            'text-[--red-color] relative after:content-[""] after:absolute after:bottom-0 after:left-0 after:h-[6px] after:w-12 after:bg-[--red-color] after:rounded-lg'
+            'text-[--red-color] relative after:content-[""] after:absolute after:bottom-0 after:left-0 after:h-[6px] after:w-12 after:bg-[--red-color] after:rounded-lg hover:text-orange-700'
           ) : ( 
-            '' 
+            'hover:text-[--dark-color]' 
           )}
-          font-medium h-full flex items-center cursor-pointer flex-shrink-0 text-sm md:text-base
+          font-medium h-full flex items-center cursor-pointer flex-shrink-0 text-sm md:text-base duration-300
         `} key={tab.tab}>{tab.tab}</p>
       ))}
     </div>
