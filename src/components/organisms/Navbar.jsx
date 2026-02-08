@@ -10,9 +10,9 @@ function Navbar(props) {
           <img src={videoBelajar} alt="Logo" className=' h-7 md:h-8' />
         </NavLink>
         
-        <div className={`flex ${props.page !== "logInSignIn" && "flex"}`}>
+        {props.page !== "logInSignIn" &&
           <ProfileBox />
-        </div>
+        }
       </div>
     </>
   )

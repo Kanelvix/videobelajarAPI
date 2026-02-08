@@ -65,7 +65,7 @@ function ProfileBox() {
     }
 
   return (
-    <div className='relative' ref={menuRef}>
+    <div ref={menuRef}>
       {/* MOBILE */}
       <div className='md:hidden cursor-pointer size-8 rounded-full flex justify-center items-center' onClick={openCloseProfile}>
         <img src={menuIcon} alt="" />
