@@ -1,6 +1,5 @@
 import React from 'react'
 import SectionTitle from '../molecules/SectionTitle'
-import CoursesCard from './CoursesCard'
 import CoursesGrid from './CoursesGrid'
 import CategoryTabs from '../molecules/CategoryTabs'
 

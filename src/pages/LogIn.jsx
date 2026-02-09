@@ -21,7 +21,7 @@ const loginField = [
 function Login() {
   return (
     <>
-      <main className='min-h-screen flex items-center justify-center px-5'>
+      <div className='min-h-screen flex items-center justify-center px-5'>
         <Card
           title="Masuk ke Akun"
           text="Yuk, lanjutin belajarmu di videobelajar."
@@ -30,7 +30,7 @@ function Login() {
           btnText2="Daftar"
           toPage="signin"
         />
-      </main>
+      </div>
     </>
   )
 }

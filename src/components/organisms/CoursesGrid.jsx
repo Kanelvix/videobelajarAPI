@@ -9,6 +9,7 @@ function CoursesGrid() {
         <CoursesCard 
           img={item.thumbnail}
           title={item.title}
+          desc={item.desc}
           key={item.id}
           pfp={item.pfp}
           price={item.price}

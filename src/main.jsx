@@ -6,6 +6,9 @@ import LogIn from './pages/LogIn.jsx';
 import SignIn from './pages/SignIn.jsx';
 import HomePage from './pages/HomePage.jsx';
 import Kategori from './pages/Kategori.jsx';
+import Pesanan from './pages/Pesanan.jsx';
+import Kelas from './pages/Kelas.jsx';
+import Profil from './pages/Profil.jsx';
 
 import { createBrowserRouter } from "react-router";
 import { RouterProvider } from "react-router/dom";
@@ -28,6 +31,9 @@ const router = createBrowserRouter([
         children: [
           { path: "/homepage", Component: HomePage },
           { path: "/kategori", Component: Kategori },
+          { path: "/pesanan", Component: Pesanan },
+          { path: "/kelas", Component: Kelas },
+          { path: "/profil", Component: Profil },
         ]
       }
     ]

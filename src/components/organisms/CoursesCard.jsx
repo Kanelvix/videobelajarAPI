@@ -1,5 +1,4 @@
 import React from 'react'
-import SectionTitle from '../molecules/SectionTitle'
 import CourseTitle from '../molecules/CourseTitle'
 import ProfileName from '../molecules/ProfileName'
 import RatingStars from '../molecules/RatingStars'
@@ -14,10 +13,10 @@ function CoursesCard(props) {
           <img src={props.img} alt="" className='size-full object-cover' />
         </div>
 
-        <div className='flex flex-col flex-1 h-full justify-between gap-2 md:gap-4'>
+        <div className='flex flex-col flex-1 h-full justify-between gap-2 md:gap-4 w-full'>
           <CourseTitle 
             title={props.title} 
-            desc="Mulai transformasi dengan instruktur profesional, harga yang terjangkau, dan..." />
+            desc={props.desc} />
           <ProfileName pfp={props.pfp} name={props.name} role={props.role} company={props.company} />
         </div>
 
@@ -25,7 +24,7 @@ function CoursesCard(props) {
       
       <div className='flex justify-between items-center'>
         <RatingStars />
-        <Price price={props.price} />
+        <Price price={`Rp ${props.price}`} />
       </div>
     </div>
   )

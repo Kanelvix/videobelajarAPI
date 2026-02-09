@@ -75,7 +75,11 @@ function ProfileBox() {
 
       {/* DESKTOP */}
       <div className='hidden md:flex items-center gap-5'>
-        <NavLink to='/kategori' className='text-[--base-color] cursor-pointer duration-300 hover:text-black'>Kategori</NavLink>
+        <NavLink
+          to='/kategori'
+          className='text-[--base-color] cursor-pointer duration-300 hover:text-black'
+          onClick={() => setOpen(false)}
+        >Kategori</NavLink>
         <img src={avatar} alt="profile" className='size-11 cursor-pointer hover:opacity-85 active:opacity-100 duration-300'
         onClick={openCloseProfile} />
       </div>

@@ -48,7 +48,7 @@ const signinField = [
 function Signin() {
   return (
     <>
-      <main className='min-h-screen flex items-center justify-center px-5'>
+      <div className='min-h-screen flex items-center justify-center px-5'>
         <Card
           title="Pendaftaran Akun"
           text="Yuk, daftarkan akunmu sekarang juga!"
@@ -58,7 +58,7 @@ function Signin() {
           options={signinField}
           toPage="login"
         />
-      </main>
+      </div>
     </>
   )
 }
