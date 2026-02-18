@@ -3,7 +3,8 @@ import CoursesCard from './CoursesCard'
 
 function CoursesGrid(props) {
   return (
-    <section className='grid gap-5 md:gap-6 md:grid-cols-2 lg:grid-cols-3 '>
+    <section className={`grid gap-5 md:gap-6 
+    ${props.location==="/kategori" ? 'lg:grid-cols-2' : 'md:grid-cols-2 lg:grid-cols-3'}`}>
       {props.courses.map((item) => (
         <CoursesCard 
           img={item.thumbnail}

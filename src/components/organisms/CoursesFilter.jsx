@@ -53,7 +53,7 @@ function CoursesFilter() {
   };
 
   return (
-    <div className='p-5 bg-white border border-[--border-color] rounded-lg flex flex-col gap-4'>
+    <div className='p-5 bg-white border border-[--border-color] rounded-lg flex flex-col gap-4 h-max'>
       <div className='flex justify-between'>
         <p className='text-lg font-semibold'>Filter</p>
         <button className='text-[--red-color] font-medium hover:opacity-80 duration-100' onClick={resetFilter}>Reset</button>

@@ -5,6 +5,18 @@ import RatingStars from '../molecules/RatingStars'
 import Price from '../atoms/Price'
 
 function CoursesCard(props) {
+  const formatPrice = (num) => {
+    if (num >= 1000000) {
+      return (num / 1000000).toFixed(num % 1000000 === 0 ? 0 : 1) + "M";
+    }
+
+    if (num >= 1000) {
+      return (num / 1000).toFixed(num % 1000 === 0 ? 0 : 1) + "K";
+    }
+
+    return num
+  }
+
   return (
     <div className='p-4 md:p-5 bg-white border-[1px] border-[--border-color] flex flex-col gap-2 md:gap-4 rounded-lg  md:min-h-[426px] cursor-pointer hover:shadow-[0_0_10px_rgba(0,0,0,0.25)] duration-300 hover:relative hover:-translate-y-1'>
       <div className='flex items-center gap-3 md:gap-4 md:flex-col'>
@@ -24,7 +36,7 @@ function CoursesCard(props) {
       
       <div className='flex justify-between items-center'>
         <RatingStars rating={props.rating} totalReview={props.totalReview} />
-        <Price price={`Rp ${props.price}`} />
+        <Price price={`Rp ${formatPrice(props.price)}`} />
       </div>
     </div>
   )
