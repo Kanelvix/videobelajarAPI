@@ -23,6 +23,10 @@ const profileMenus = [
     toPage: "pesanan"
   },
   {
+    name: "Dashboard",
+    toPage: "dashboard"
+  },
+  {
     name: "Keluar",
     toPage: "login"
   },
@@ -66,14 +70,12 @@ function ProfileBox() {
 
   return (
     <div ref={menuRef}>
-      {/* MOBILE */}
       <div
         className='md:hidden cursor-pointer size-8 rounded-full flex justify-center items-center'
         onClick={openCloseProfile}>
         <img src={menuIcon} alt="" />
       </div>
 
-      {/* DESKTOP */}
       <div className='hidden md:flex items-center gap-5'>
         <NavLink
           to='/kategori'
@@ -84,7 +86,7 @@ function ProfileBox() {
         onClick={openCloseProfile} />
       </div>
 
-      <div 
+      <div
         className={`
           fixed md:w-52 top-[4.875rem] md:top-20 border-t-[1px] border-[--border-color] md:border-none inset-x-0 md:right-5 md:inset-auto
           bg-white shadow-lg rounded-b-md

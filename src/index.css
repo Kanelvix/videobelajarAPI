@@ -18,6 +18,10 @@
   --green-color: #3ECF4C;
   --base-color: #333333AD;
   --yellow-color: #FFBD3A;
+  --light-yellow-color: #FFF7D7CC;
+  --dark-yellow-color: #B5A40D;
+  --light-gray-color: #F5F5F5;
+  --secondary-color: #C1C2C4;
 }
 
 main {
