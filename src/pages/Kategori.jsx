@@ -49,9 +49,9 @@ function Kategori() {
 
     const matchDuration =
       filters.durasi === "Semua" ||
-      (filters.durasi === "Kurang dari 4 Jam" && courses.durasi < 4) ||
-      (filters.durasi === "4 - 8 Jam" && courses.durasi >= 4 && courses.durasi <= 8) ||
-      (filters.durasi === "Lebih dari 8 Jam" && courses.durasi > 8);
+      (filters.durasi === "Kurang dari 4 Jam" && courses.duration < 4) ||
+      (filters.durasi === "4 - 8 Jam" && courses.duration >= 4 && courses.duration <= 8) ||
+      (filters.durasi === "Lebih dari 8 Jam" && courses.duration > 8);
 
     const matchSearch =
       search === "" ||

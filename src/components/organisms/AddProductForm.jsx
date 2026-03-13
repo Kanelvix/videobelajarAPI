@@ -74,6 +74,7 @@ const defaultForm = {
   category: "Bisnis",
   desc: "",
   price: "",
+  duration: 4,
   rating: 0,
   totalReview: 0,
   pfp: "",
@@ -130,7 +131,10 @@ function AddProductForm({fetchCourses, editing, setEditing}) {
 
   const createCourse = async(data) => {
     try {
-      await postCourse(data);
+      await postCourse({
+        ...data,
+        price: Number(data.price)
+      });
       fetchCourses();
     } catch{
       console.log('failed')

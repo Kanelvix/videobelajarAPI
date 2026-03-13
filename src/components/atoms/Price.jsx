@@ -14,7 +14,7 @@ function Price(props) {
   }
 
   return (
-    <p className={`text-[--green-color] font-semibold ${props.fontSize}`}>{`Rp ${formatPrice(props.price)}`}</p>
+    <p className={`text-[--green-color] font-semibold ${props.fontSize}`}>{props.price === 0 ? 'FREE' : `Rp ${formatPrice(props.price)}`}</p>
   )
 }
 
